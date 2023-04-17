@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="./filter.js" defer></script>
+    <!-- <script src="./arrays-&-for-loops.js" defer></script> -->
+
+    <title>exercise 2</title>
+
+  </head>
+
+  <body>
+
+    <h1>RECIPE LIST</h1>
+    <h2> /Interactive Media 1/</h2>
+
+    <nav>
+
+    <div class="FilterSection">     
+
+      <details class="FilterBox">
+        <summary>Author</summary>
+        <button class="FilterButton" onclick='filterCategory("KLA", this)'>J. Kenji López-Alt</button>
+        <button class="FilterButton" onclick='filterCategory("M", this)'>Maangchi</button>
+        <button class="FilterButton" onclick='filterCategory("HM", this)'>Hetty McKinnon</button>
+        <button class="FilterButton" onclick='filterCategory("CLM", this)'>Carla Lalli Music</button>
+
+
+      </details>
+
+      <details class="FilterBox">
+        <summary>Countries</summary>
+        <button class="FilterButton" onclick='filterCategory("VN", this)'>Vietnam</button>
+        <button class="FilterButton" onclick='filterCategory("Au", this)'>Australia</button>
+        <button class="FilterButton" onclick='filterCategory("TL", this)'>Thailand</button>
+
+
+      </details>
+
+      <details class="FilterBox">
+        <summary>Cookbook</summary>
+        <button class="FilterButton" onclick='filterCategory("1", this)'>2023</button>
+      </details>
+
+      <details class="FilterBox">
+        <summary>Chef</summary>
+        <button class="FilterButton" onclick='filterCategory("Fe", this)'>Female</button>
+        <button class="FilterButton" onclick='filterCategory("Ma", this)'>Male</button>
+
+      </details>
+
+    </div>
+
+    
+
+  </nav>
+
+
+    <!-- Recipe 1 -->
+  <div class="RecipeBox HM">
+
+     <div class="Foodname">
+      <p> Puttanesca </p>
+     </div>
+
+      <!--this is the 3 boxes -->
+     <section id="RecipeInfo">
+        <div class="boxes">
+         <div class="RecipeInfo__wrapper">
+      
+      <!--time box--> 
+
+          <div class="RecipeInfo__item">
+           <div class="RecipeInfo__icon">
+             <img src="./images/time.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+           </div>
+           <h3 class="RecipeInfo__tittle"> Time</h3>
+           <p class="RecipeInfo__text" > Prep(10)-Cook(30)</p>
+          </div>
+       
+      <!--Serving box-->
+
+          <div class="RecipeInfo__item">
+            <div class="RecipeInfo__icon">
+              <img src="./images/serving.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+            </div>
+            <h3 class="RecipeInfo__tittle"> Serving</h3>
+            <p class="RecipeInfo__text" > 4 to 6 </p>
+          </div>
+
+      <!-- Skill box-->
+    
+          <div class="RecipeInfo__item">
+            <div class="RecipeInfo__icon">
+              <img src="./images/level.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+            </div>
+            <h3 class="RecipeInfo__tittle"> Skill</h3>
+            <p class="RecipeInfo__text" > Low </p>
+           </div> 
+
+         </div>
+        </div>
+
+      </section>
+  
+     <div class= "Row">
+
+      <div class="left">
+        <img class="RecipeImg" src="./images/Puttanesca.jpg" alt="bowl of puttanesca pasta" />
+      </div>
+
+      <div class="right">
+
+        <div class="Attribution">
+
+          <div class="RecipeName">Recipe Name: Baked Puttanesca Risotto with Olives, Lemon and Parsley</div>
+          <div class="Cuisine">Cuisine: Italian</div>
+          <div class="Course">Course: Main</div>
+          <div class="Dietary">Dietary: Vegetarian</div>
+          <div class="SpecialEquipment">Special Equipment: Ovenproof Dutch oven</div>
+        </div>
+
+        <br>
+        <hr>
+       
+        <p>Image:
+          <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/10559879@N00/5996763901"> Spaghetti Puttanesca con Tonno</a> by 
+          <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/10559879@N00">avlxyz</a> is licensed under 
+          <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=openverse">
+            CC BY-NC-SA 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+          </a>
+          </p>
+          <p> Link: 
+          <a href="https://www.abc.net.au/everyday/baked-puttanesca-risotto-with-tomato-olives-lemon-parsley-recipe/11270338"> View full article here </a>
+          </p>
+    
+
+        <br>
+        <hr>
+
+        <div class="Publisher">Publisher: ABC Everyday</div>
+        <div class="DatePublished">Date Published: 3 Jul 2019</div>
+        <div class="DateUpdated">Date Updated: 29 Jul 2019</div>
+
+
+      </div>
+
+    </div>
+
+    
+
+  </div> 
+    
+    
+    
+    <!-- Recipe 2 -->
+    <div class="RecipeBox M">
+
+      <div class="Foodname">
+        <p> Caprese Salad </p>
+       </div>
+       
+       <!--this is the 3 boxes -->
+     <section id="RecipeInfo">
+      <div class="boxes">
+       <div class="RecipeInfo__wrapper">
+    
+       <!--time box--> 
+
+        <div class="RecipeInfo__item">
+         <div class="RecipeInfo__icon">
+           <img src="./images/time.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+         </div>
+         <h3 class="RecipeInfo__tittle"> Time</h3>
+         <p class="RecipeInfo__text" > 70-105m </p>
+        </div>
+     
+       <!--Serving box-->
+
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/serving.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Serving</h3>
+          <p class="RecipeInfo__text" > ? </p>
+        </div>
+
+      <!-- Skill box-->
+  
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/level.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Skill</h3>
+          <p class="RecipeInfo__text" > Low </p>
+         </div> 
+
+       </div>
+      </div>
+
+      
+    </section>
+
+    <div class= "Row">
+
+      <div class="left">
+        <img class="RecipeImg" src="./images/Caprese.jpg" alt="plate of caprese salad" />
+      </div>
+
+      <div class="right">
+
+        <div class="Attribution">
+
+          <div class="RecipeName">Recipe Name: Caprese Salad with Slow-Roasted Tomatoes, Rocket and Basil Gremolata</div>
+          <div class="Cuisine">Cuisine: Italian</div>
+          <div class="Course">Course: Salad</div>
+          <div class="Dietary">Dietary: Vegetarian</div>
+          <div class="SpecialEquipment">Special Equipment: N/A</div>
+        </div>
+
+        <br>
+        <hr>
+       
+        <p>Image:
+          <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/25597828@N00/4254859304">Caprese Salad</a> by 
+          <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/25597828@N00">wEnDaLicious</a> is licensed under 
+          <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nd-nc/2.0/jp/?ref=openverse">
+            CC BY-NC-ND 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img> </a>
+          </p>
+          <p> Link: 
+          <a href="https://www.abc.net.au/everyday/caprese-salad-slow-roasted-tomato-rocket-basil-gremolata-recipe/10776846"> View full article here </a>
+          </p>
+    
+
+        <br>
+        <hr>
+
+        <div class="Publisher">Publisher: ABC Everyday</div>
+        <div class="DatePublished">Date Published: 4 Feb 2019</div>
+        <div class="DateUpdated">Date Updated: 17 Dec 2020</div>
+
+
+      </div>
+
+    </div>
+    </div>
+
+
+      
+    
+    <!-- Recipe 3 -->
+    <div class="RecipeBox KLA">
+
+      <div class="Foodname">
+        <p> Thai Curry </p>
+       </div>
+
+         <!--this is the 3 boxes -->
+     <section id="RecipeInfo">
+      <div class="boxes">
+       <div class="RecipeInfo__wrapper">
+    
+    <!--time box--> 
+
+        <div class="RecipeInfo__item">
+         <div class="RecipeInfo__icon">
+           <img src="./images/time.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+         </div>
+         <h3 class="RecipeInfo__tittle"> Time</h3>
+         <p class="RecipeInfo__text" > 30m </p>
+        </div>
+     
+    <!--Serving box-->
+
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/serving.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Serving</h3>
+          <p class="RecipeInfo__text" > 4 to 6 </p>
+        </div>
+
+    <!-- Skill box-->
+  
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/level.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Skill</h3>
+          <p class="RecipeInfo__text" > Medium </p>
+         </div> 
+
+       </div>
+      </div>
+
+    </section>
+
+    <!--the inFo--> 
+    <div class= "Row">
+
+      <div class="left">
+        <img class="RecipeImg" src="./images/Enoki.jpg" alt="enoki mushrooms" style="height: 363px;">
+      </div>
+
+      <div class="right">
+
+        <div class="Attribution">
+
+          <div class="RecipeName">Recipe Name: Crispy Enoki and Onion Fritters with Thai Curry Mayo Recipe</div>
+          <div class="Cuisine">Cuisine: Fusion</div>
+          <div class="Course">Course: Snack, Savoury</div>
+          <div class="Dietary">Dietary: Vegetarian</div>
+          <div class="SpecialEquipment">Special Equipment: N/A </div>
+        </div>
+
+        <br>
+        <hr>
+       
+        <p>Image:
+          <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/48600074651@N01/107148202">brown enoki mushrooms</a> by 
+          <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/48600074651@N01">chotda</a> is licensed under 
+          <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nd-nc/2.0/jp/?ref=openverse">
+            CC BY-NC-ND 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+          </a>
+          </p>
+          <p> Link: 
+          <a href="https://www.seriouseats.com/crispy-enoki-and-onion-fritter-with-thai-curry-mayo-recipe"> View full article here </a>
+          </p>
+    
+
+        <br>
+        <hr>
+
+        <div class="Publisher">Publisher: Serious Eats</div>
+        <div class="DatePublished">Date Published: Oct. 9, 2012</div>
+        <div class="DateUpdated">Date Updated: Aug. 30, 2018</div>
+
+
+      </div>
+
+      </div>
+
+     
+
+    </div>
+    
+    
+    <!-- Recipe 4 -->
+    <div class="RecipeBox">
+
+      <div class="Foodname">
+        <p> Steamed Buns </p>
+       </div>
+
+         <!--this is the 3 boxes -->
+     <section id="RecipeInfo">
+      <div class="boxes">
+       <div class="RecipeInfo__wrapper">
+    
+    <!--time box--> 
+
+        <div class="RecipeInfo__item">
+         <div class="RecipeInfo__icon">
+           <img src="./images/time.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+         </div>
+         <h3 class="RecipeInfo__tittle"> Time</h3>
+         <p class="RecipeInfo__text" > Prep(1h)-Cook(15m)</p>
+        </div>
+     
+    <!--Serving box-->
+
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/serving.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Serving</h3>
+          <p class="RecipeInfo__text" >  10 pieces </p>
+        </div>
+
+    <!-- Skill box-->
+  
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/level.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Skill</h3>
+          <p class="RecipeInfo__text" > Medium </p>
+         </div> 
+
+       </div>
+      </div>
+
+    </section>
+
+<!--the inFo--> 
+<div class= "Row">
+
+  <div class="left">
+    <img class="RecipeImg" src="./images/Red_Bean_Bun.jpg" alt="ripped open steamed bun with red bean paste" />
+  </div>
+
+  <div class="right">
+
+    <div class="Attribution">
+
+      <div class="RecipeName">Recipe Name: The Food Lab's Chocolate Chip Cookies</div>
+      <div class="Cuisine">Cuisine: Korean</div>
+      <div class="Course">Course: Snack, Sweet</div>
+      <div class="Dietary">Dietary: Vegetarian</div>
+      <div class="SpecialEquipment">Special Equipment: N/A </div>
+    </div>
+
+    <br>
+    <hr>
+   
+    <p>Image:
+      <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/10559879@N00/33435831771">Sweet red bean bun 豆沙包 AUD2 - Wing Loong, Melbourne</a> by 
+          <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/10559879@N00">avlxyz</a> is licensed under 
+          <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/2.0/?ref=openverse">
+            CC BY-NC 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+          </a>
+      </p>
+      <p> Link: 
+      <a href="https://www.maangchi.com/recipe/jjinppang"> View full article here </a>
+      </p>
+
+
+    <br>
+    <hr>
+
+    <div class="Publisher">Publisher: Maangchi</div>
+
+      <div class="DatePublished">Date Published: December 19, 2017</div>
+
+      <div class="DateUpdated">Date Updated: August 11, 2021</div>
+
+
+    </div>
+
+    </div>
+    </div>
+    
+    <!-- Recipe 5 -->
+    <div class="RecipeBox KLA">
+
+      <div class="Foodname">
+        <p> Chip Cookies </p>
+       </div>
+
+      <!--this is the 3 boxes -->
+      <section id="RecipeInfo">
+        <div class="boxes">
+         <div class="RecipeInfo__wrapper">
+      
+      <!--time box--> 
+
+          <div class="RecipeInfo__item">
+           <div class="RecipeInfo__icon">
+             <img src="./images/time.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+           </div>
+           <h3 class="RecipeInfo__tittle"> Time</h3>
+           <p class="RecipeInfo__text" > Prep(45)-Cook(35)</p>
+          </div>
+       
+      <!--Serving box-->
+
+          <div class="RecipeInfo__item">
+            <div class="RecipeInfo__icon">
+              <img src="./images/serving.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+            </div>
+            <h3 class="RecipeInfo__tittle"> Serving</h3>
+            <p class="RecipeInfo__text" > 28 cookies </p>
+          </div>
+
+      <!-- Skill box-->
+    
+          <div class="RecipeInfo__item">
+            <div class="RecipeInfo__icon">
+              <img src="./images/level.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+            </div>
+            <h3 class="RecipeInfo__tittle"> Skill</h3>
+            <p class="RecipeInfo__text" > Low </p>
+           </div> 
+
+         </div>
+        </div>
+
+      </section>
+
+<!--the inFo--> 
+<div class= "Row">
+
+  <div class="left">
+    <img class="RecipeImg" src="./images/Cookies.jpg" alt="plate of chocolate chip cookies"; style="height:363.59px;" />
+  </div>
+
+  <div class="right">
+
+    <div class="Attribution">
+
+      <div class="RecipeName">Recipe Name: Fluffy Steamed Buns filled with Sweet Red Beans</div>
+      <div class="Cuisine">Cuisine: Western</div>
+      <div class="Course">Course: Snack, Sweet</div>
+      <div class="Dietary">Dietary: Vegetarian</div>
+      <div class="SpecialEquipment">Special Equipment: N/A </div>
+    </div>
+
+    <br>
+    <hr>
+   
+    <p>Image:
+      "<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/70757891@N00/7133349441">Browned butter chocolate chip cookies</a>" by 
+          <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/70757891@N00">grongar</a> is licensed under 
+          <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by/2.0/?ref=openverse">
+            CC BY 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+          </a>
+      </p>
+      <p> Link: 
+      <a href=" https://www.seriouseats.com/the-food-lab-best-chocolate-chip-cookie-recipe"> View full article here </a>
+      </p>
+
+
+    <br>
+    <hr>
+
+    <div class="Publisher">Publisher: Serious Eats</div>
+    <div class="DatePublished">Date Published: Dec. 20, 2013</div>
+    <div class="DateUpdated">Date Updated: Sep. 16, 2022</div>
+
+
+    </div>
+    </div>
+    </div>
+
+    <!-- Recipe 6 -->
+    <div class="RecipeBox KLA">
+
+      <div class="Foodname">
+        <p> Grilled Cheese </p>
+       </div>
+
+         <!--this is the 3 boxes -->
+     <section id="RecipeInfo">
+      <div class="boxes">
+       <div class="RecipeInfo__wrapper">
+    
+    <!--time box--> 
+
+        <div class="RecipeInfo__item">
+         <div class="RecipeInfo__icon">
+           <img src="./images/time.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+         </div>
+         <h3 class="RecipeInfo__tittle"> Time</h3>
+         <p class="RecipeInfo__text" > 12m </p>
+        </div>
+     
+    <!--Serving box-->
+
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/serving.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Serving</h3>
+          <p class="RecipeInfo__text" > 1 sanwich </p>
+        </div>
+
+    <!-- Skill box-->
+  
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/level.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Skill</h3>
+          <p class="RecipeInfo__text" > Low </p>
+         </div> 
+
+       </div>
+      </div>
+
+    </section> 
+
+<!--the inFo--> 
+<div class= "Row">
+
+  <div class="left">
+    <img class="RecipeImg" src="./images/Grilled_Cheese.jpg" alt="grilled cheese sandwich with pickles" />
+  </div>
+
+  <div class="right">
+
+    <div class="Attribution">
+
+      <div class="RecipeName">Recipe Name: Grilled Cheese With Kimchi Recipe</div>
+      <div class="Cuisine">Cuisine: Fusion</div>
+      <div class="Course">Course: Snack, Savoury</div>
+      <div class="Dietary">Dietary: Vegetarian</div>
+      <div class="SpecialEquipment">Special Equipment: N/A </div>
+    </div>
+
+    <br>
+    <hr>
+   
+    <p>Image:
+      "<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/85508296@N00/8340994832">Lefty’s Food Truck</a>" by 
+          <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/85508296@N00">cherrylet</a> is licensed under 
+          <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=openverse">
+            CC BY-NC-SA 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+          </a>
+      </p>
+      <p> Link: 
+      <a href="https://www.seriouseats.com/grilled-cheese-with-kimchi-recipe"> View full article here </a>
+      </p>
+
+
+    <br>
+    <hr>
+
+    <div class="Publisher">Publisher: Serious Eats</div>
+    <div class="DatePublished">Date Published: Apr. 28, 2013</div>
+    <div class="DateUpdated">Date Updated: Sep. 21, 2022</div>
+
+
+    </div>
+    </div>
+    </div>
+
+    
+    <!-- Recipe 7 -->
+    <div class="RecipeBox CLM">
+
+      <div class="Foodname">
+        <p> Pork and Beans </p>
+       </div>
+
+         <!--this is the 3 boxes -->
+     <section id="RecipeInfo">
+      <div class="boxes">
+       <div class="RecipeInfo__wrapper">
+    
+    <!--time box--> 
+
+        <div class="RecipeInfo__item">
+         <div class="RecipeInfo__icon">
+           <img src="./images/time.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+         </div>
+         <h3 class="RecipeInfo__tittle"> Time</h3>
+         <p class="RecipeInfo__text" > Prep(over)-Cook(4h)</p>
+        </div>
+     
+    <!--Serving box-->
+
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/serving.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Serving</h3>
+          <p class="RecipeInfo__text" > 6 generous </p>
+        </div>
+
+    <!-- Skill box-->
+  
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/level.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Skill</h3>
+          <p class="RecipeInfo__text" > Medium </p>
+         </div> 
+
+       </div>
+      </div>
+
+    </section>
+
+    <!--the inFo--> 
+<div class= "Row">
+
+  <div class="left">
+    <img class="RecipeImg" src="./images/Pork_Beans.jpg" alt="Pork and Beans" style="height:344.59px;"/>
+  </div>
+
+  <div class="right">
+
+    <div class="Attribution">
+
+      <div class="RecipeName">Recipe Name: Hands-Off Pork and Beans</div>
+      <div class="Cuisine">Cuisine: American</div>
+      <div class="Course">Course: Main</div>
+      <div class="Dietary">Dietary: Meat based</div>
+      <div class="SpecialEquipment">Special Equipment: N/A </div>
+    </div>
+
+    <br>
+    <hr>
+   
+    <p>Image:
+      "<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/22798667@N00/6158931731">spicy pork and bean chili</a>" by 
+          <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/22798667@N00">telepathicparanoia</a> is licensed under 
+          <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nd/2.0/?ref=openverse">
+            CC BY-ND 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+          </a>
+      </p>
+      <p> Link: 
+      <a href="https://www.patreon.com/posts/recipe-hands-off-60369279"> View full article here </a>
+      </p>
+
+
+    <br>
+    <hr>
+
+    <div class="Publisher">Publisher: Carla Lalli Music</div>
+
+      <div class="DatePublished">Date Published: Dec 28, 2021</div>
+
+      <div class="DateUpdated">Date Updated: N/A</div>
+
+    </div>
+    </div>
+  </div>      
+
+    <!-- Recipe 8 -->
+    <div class="RecipeBox M">
+
+      <div class="Foodname">
+        <p> Kimchi Pancake </p>
+       </div>
+
+         <!--this is the 3 boxes -->
+     <section id="RecipeInfo">
+      <div class="boxes">
+       <div class="RecipeInfo__wrapper">
+    
+    <!--time box--> 
+
+        <div class="RecipeInfo__item">
+         <div class="RecipeInfo__icon">
+           <img src="./images/time.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+         </div>
+         <h3 class="RecipeInfo__tittle"> Time</h3>
+         <p class="RecipeInfo__text" > 15m </p>
+        </div>
+     
+    <!--Serving box-->
+
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/serving.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Serving</h3>
+          <p class="RecipeInfo__text" > 8 slices </p>
+        </div>
+
+    <!-- Skill box-->
+  
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/level.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Skill</h3>
+          <p class="RecipeInfo__text" > Low </p>
+         </div> 
+
+       </div>
+      </div>
+
+    </section>
+
+
+          <!--the inFo--> 
+<div class= "Row">
+
+  <div class="left">
+    <img class="RecipeImg" src="./images/Kimchi_Pancake.jpg" alt="kimchi pancake with bowl of dipping sauce" />
+  </div>
+
+  <div class="right">
+
+    <div class="Attribution">
+
+      <div class="RecipeName">Recipe Name: Kimchi Pancake</div>
+      <div class="Cuisine">Cuisine: Korean</div>
+      <div class="Course">Course: Snack, Savoury</div>
+      <div class="Dietary">Dietary: Vegetarian</div>
+      <div class="SpecialEquipment">Special Equipment: N/A </div>
+    </div>
+
+    <br>
+    <hr>
+   
+    <p>Image:
+      "<a target="_blank" rel="noopener noreferrer" href="https://commons.wikimedia.org/w/index.php?curid=54768084">File:Kimchibuchimgae (kimchi pancake).jpg</a>" by 
+          <a target="_blank" rel="noopener noreferrer" href="https://pixabay.com/ko/users/sharonang-99559/">sharonang</a> is marked with 
+          <a target="_blank" rel="noopener noreferrer" href="http://creativecommons.org/publicdomain/zero/1.0/deed.en?ref=openverse">
+            CC0 1.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+          </a>
+      </p>
+      <p> Link: 
+      <a href="https://www.maangchi.com/recipe/kimchijeon"> View full article here </a>
+      </p>
+
+
+    <br>
+    <hr>
+
+      <div class="Publisher">Publisher: Maangchi</div>
+      <div class="DatePublished">Date Published: February 27th, 2020</div>
+      <div class="DateUpdated">Date Updated: August 1, 2021</div>
+
+    
+
+    </div>
+    </div>
+  </div>      
+    
+    <!-- Recipe 9 -->
+    <div class="RecipeBox KLA">
+
+      <div class="Foodname">
+        <p> Shakshuka </p>
+       </div>
+
+         <!--this is the 3 boxes -->
+     <section id="RecipeInfo">
+      <div class="boxes">
+       <div class="RecipeInfo__wrapper">
+    
+    <!--time box--> 
+
+        <div class="RecipeInfo__item">
+         <div class="RecipeInfo__icon">
+           <img src="./images/time.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+         </div>
+         <h3 class="RecipeInfo__tittle"> Time</h3>
+         <p class="RecipeInfo__text" > 35m </p>
+        </div>
+     
+    <!--Serving box-->
+
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/serving.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Serving</h3>
+          <p class="RecipeInfo__text" > 4 to 6 </p>
+        </div>
+
+    <!-- Skill box-->
+  
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/level.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Skill</h3>
+          <p class="RecipeInfo__text" > Medium </p>
+         </div> 
+
+       </div>
+      </div>
+
+    </section>
+
+
+         <!--the inFo--> 
+  <div class= "Row">
+
+   <div class="left">
+    <img class="RecipeImg" src="./images/Shakshuka.jpg" alt="pan filled with shakshuka" style="height:363.59px;" />
+  </div>
+
+   <div class="right">
+
+    <div class="Attribution">
+
+      <div class="RecipeName">Recipe Name: Shakshuka (North African–Style Poached Eggs in Spicy Tomato Sauce)</div>
+      <div class="Cuisine">Cuisine: North African</div>
+      <div class="Course">Course: Main</div>
+      <div class="Dietary">Dietary: Vegetarian</div>
+      <div class="SpecialEquipment">Special Equipment: N/A </div>
+    </div>
+
+    <br>
+    <hr>
+   
+    <p>Image:
+      "<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/33993074@N00/14288893837">Shakshuka</a>" by 
+          <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/33993074@N00">joyosity</a> is licensed under 
+          <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by/2.0/?ref=openverse">
+            CC BY 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+          </a>
+      </p>
+      <p> Link: 
+      <a href="https://www.seriouseats.com/shakshuka-north-african-shirred-eggs-tomato-pepper-recipe"> View full article here </a>
+      </p>
+
+
+    <br>
+    <hr>
+
+    <div class="Publisher">Publisher: Serious Eats</div>
+    <div class="DatePublished">Date Published: Sep. 28, 2016</div>
+    <div class="DateUpdated">Date Updated: Aug. 10, 2022</div>
+
+    
+
+    </div>
+    </div>
+  </div>      
+    
+    <!-- Recipe 10 -->
+    <div class="RecipeBox CLM">
+
+      <div class="Foodname">
+        <p> Spaghetti </p>
+       </div>
+
+         <!--this is the 3 boxes -->
+     <section id="RecipeInfo">
+      <div class="boxes">
+       <div class="RecipeInfo__wrapper">
+    
+    <!--time box--> 
+
+        <div class="RecipeInfo__item">
+         <div class="RecipeInfo__icon">
+           <img src="./images/time.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+         </div>
+         <h3 class="RecipeInfo__tittle"> Time</h3>
+         <p class="RecipeInfo__text" > 1h10m </p>
+        </div>
+     
+    <!--Serving box-->
+
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/serving.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Serving</h3>
+          <p class="RecipeInfo__text" > 4 servings </p>
+        </div>
+
+    <!-- Skill box-->
+  
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/level.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Skill</h3>
+          <p class="RecipeInfo__text" > Low </p>
+         </div> 
+
+       </div>
+      </div>
+
+    </section>
+
+
+     <!--the inFo--> 
+  <div class= "Row">
+
+    <div class="left">
+      <img class="RecipeImg" src="./images/Cauliflower_Spaghetti.jpg" alt="bowl of spaghettie with cauliflower sauce" style="height:363.59px;"/>
+    </div>
+ 
+    <div class="right">
+ 
+     <div class="Attribution">
+ 
+      <div class="RecipeName">Recipe Name: Spaghetti with Melted Cauliflower Sauce </div>
+      <div class="Cuisine">Cuisine: Italian</div>
+      <div class="Course">Course: Main</div>
+      <div class="Dietary">Dietary: Pescatarian</div>
+       <div class="SpecialEquipment">Special Equipment: N/A </div>
+     </div>
+ 
+     <br>
+     <hr>
+    
+     <p>Image:
+      "<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/35468144810@N01/6240477142">Spaghetti with Cauliflower and Anchovy Breadcrumbs</a>" by 
+          <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/35468144810@N01">Girl Interrupted Eating</a> is licensed under 
+          <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by/2.0/?ref=openverse">
+            CC BY 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+          </a>
+       </p>
+       <p> Link: 
+       <a href="https://www.patreon.com/posts/pasta-with-sauce-45042575"> View full article here </a>
+       </p>
+ 
+ 
+     <br>
+     <hr>
+ 
+     <div class="Publisher">Publisher: Carla Lalli Music</div>
+      <div class="DatePublished">Date Published: Dec 16, 2020</div>
+      <div class="DateUpdated">Date Updated: N/A</div>
+
+      </div>
+
+     </div>
+
+    </div>
+    
+    <!-- Recipe 11 -->
+    <div class="RecipeBox M">
+
+      <div class="Foodname">
+        <p> Fried Chicken </p>
+       </div> 
+
+            <!--this is the 3 boxes -->
+     <section id="RecipeInfo">
+      <div class="boxes">
+       <div class="RecipeInfo__wrapper">
+    
+    <!--time box--> 
+
+        <div class="RecipeInfo__item">
+         <div class="RecipeInfo__icon">
+           <img src="./images/time.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+         </div>
+         <h3 class="RecipeInfo__tittle"> Time</h3>
+         <p class="RecipeInfo__text" > 45-50m </p>
+        </div>
+     
+    <!--Serving box-->
+
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/serving.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Serving</h3>
+          <p class="RecipeInfo__text" > 3 to 4 </p>
+        </div>
+
+    <!-- Skill box-->
+  
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/level.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Skill</h3>
+          <p class="RecipeInfo__text" > Medium </p>
+         </div> 
+
+       </div>
+      </div>
+
+    </section>
+
+
+    <!--the inFo--> 
+  <div class= "Row">
+
+    <div class="left">
+      <img class="RecipeImg" src="./images/Korean_Fried_Chicken.jpg" alt="plate of fried chicken with pickles and kimchi" style="height:358px;" />
+    </div>
+ 
+    <div class="right">
+ 
+     <div class="Attribution">
+ 
+      <div class="RecipeName">Recipe Name: Sweet, Sour, & Spicy Korean Fried Chicken</div>
+      <div class="Cuisine">Cuisine: Korean</div>
+      <div class="Course">Course: Main</div>
+      <div class="Dietary">Dietary: Meat based</div>
+       <div class="SpecialEquipment">Special Equipment: N/A </div>
+     </div>
+ 
+     <br>
+     <hr>
+    
+     <p>Image:
+      "<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/40726522@N02/8563518350">Bon Chon Korean Fried Chicken Wings</a>" by 
+          <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/40726522@N02">powerplantop</a> is licensed under 
+          <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nd-nc/2.0/jp/?ref=openverse">
+            CC BY-NC-ND 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+          </a>
+       </p>
+       <p> Link: 
+       <a href="https://www.maangchi.com/recipe/yangnyeom-tongdak"> View full article here </a>
+       </p>
+ 
+ 
+     <br>
+     <hr>
+ 
+      <div class="Publisher">Publisher: Maangchi</div>
+      <div class="DatePublished">Date Published: January 27th, 2011</div>
+      <div class="DateUpdated">Date Updated: August 3, 2021</div>
+
+
+      </div>
+
+     </div>
+
+    </div>
+
+    
+    <!-- Recipe 12 -->
+    <div class="RecipeBox KLA">
+
+      <div class="Foodname">
+        <p> Beef Stroganoff </p>
+       </div>
+
+            <!--this is the 3 boxes -->
+     <section id="RecipeInfo">
+      <div class="boxes">
+       <div class="RecipeInfo__wrapper">
+    
+    <!--time box--> 
+
+        <div class="RecipeInfo__item">
+         <div class="RecipeInfo__icon">
+           <img src="./images/time.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+         </div>
+         <h3 class="RecipeInfo__tittle"> Time</h3>
+         <p class="RecipeInfo__text" > 55m </p>
+        </div>
+     
+    <!--Serving box-->
+
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/serving.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Serving</h3>
+          <p class="RecipeInfo__text" > 4 servings </p>
+        </div>
+
+    <!-- Skill box-->
+  
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/level.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Skill</h3>
+          <p class="RecipeInfo__text" > Medium </p>
+         </div> 
+
+       </div>
+      </div>
+
+    </section>
+
+
+    
+    <!--the inFo--> 
+  <div class= "Row">
+
+    <div class="left">
+      <img class="RecipeImg" src="./images/Stroganoff.jpg" alt="bowl of beef stroganoff pasta" />
+    </div>
+ 
+    <div class="right">
+ 
+     <div class="Attribution">
+ 
+      <div class="RecipeName">Recipe Name: The Ultimate Beef Stroganoff Recipe</div>
+      <div class="Cuisine">Cuisine: Korean</div>
+      <div class="Cuisine">Cuisine: Russian</div>
+      <div class="Dietary">Dietary: Meat based</div>
+       <div class="SpecialEquipment">Special Equipment: N/A </div>
+     </div>
+ 
+     <br>
+     <hr>
+    
+     <p>Image:
+      "<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/66606673@N00/4597118575">Beef Stroganoff</a>" by 
+      <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/66606673@N00">cobalt123</a> is licensed under 
+      <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=openverse">
+        CC BY-NC-SA 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+      </a>
+       </p>
+       <p> Link: 
+       <a href="https://www.seriouseats.com/ultimate-beef-stroganof-recipe"> View full article here </a>
+       </p>
+ 
+ 
+     <br>
+     <hr>
+ 
+      <div class="Publisher">Publisher: Serious Eats</div>
+      <div class="DatePublished">Date Published: Jan. 9, 2015</div>
+      <div class="DateUpdated">Date Updated: Aug. 27, 2020</div>
+
+
+      </div>
+
+     </div>
+
+    </div>
+    
+
+    
+    <!-- Recipe 13 -->
+    <div class="RecipeBox CLM">
+
+      <div class="Foodname">
+        <p> Pear Tart </p>
+       </div>
+
+            <!--this is the 3 boxes -->
+     <section id="RecipeInfo">
+      <div class="boxes">
+       <div class="RecipeInfo__wrapper">
+    
+    <!--time box--> 
+
+        <div class="RecipeInfo__item">
+         <div class="RecipeInfo__icon">
+           <img src="./images/time.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+         </div>
+         <h3 class="RecipeInfo__tittle"> Time</h3>
+         <p class="RecipeInfo__text" > 3h </p>
+        </div>
+     
+    <!--Serving box-->
+
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/serving.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Serving</h3>
+          <p class="RecipeInfo__text" > 8 servings </p>
+        </div>
+
+    <!-- Skill box-->
+  
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/level.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Skill</h3>
+          <p class="RecipeInfo__text" > Medium </p>
+         </div> 
+
+       </div>
+      </div>
+
+    </section>
+
+
+  <!--the inFo--> 
+  <div class= "Row">
+
+    <div class="left">
+      <img class="RecipeImg" src="./images/Pear_Tart.jpg" alt="pear tart on a table" style="height:358px;"/>
+    </div>
+ 
+    <div class="right">
+ 
+     <div class="Attribution">
+ 
+      <div class="RecipeName">Recipe Name: Vanilla–Brown Butter Apple Tart</div>
+      <div class="Cuisine">Cuisine: French</div>
+      <div class="Course">Course: Dessert</div>
+      <div class="Dietary">Dietary: Vegetarian</div>
+      <div class="SpecialEquipment">Special Equipment: Bench scraper, tart pan</div>
+     </div>
+ 
+     <br>
+     <hr>
+    
+     <p>Image:
+      "<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/37829433@N03/4711738063">Tarte Amandines aux Poires - Almond-Pear Tart 0205-1550</a>" by 
+      <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/37829433@N03">Eat my Cake now</a> is licensed under 
+      <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nd-nc/2.0/jp/?ref=openverse">
+        CC BY-NC-ND 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+        <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+      </a>
+       </p>
+       <p> Link: 
+       <a href="https://www.patreon.com/posts/recipe-vanilla-60100711"> View full article here </a>
+       </p>
+ 
+ 
+     <br>
+     <hr>
+ 
+     <div class="Publisher">Publisher: Carla Lalli Music</div>
+     <div class="DatePublished">Date Published: Dec 20, 2021</div>
+     <div class="DateUpdated">Date Updated: N/A</div>
+
+
+      </div>
+
+     </div>
+
+    </div>
+
+    <!-- Recipe 14 -->
+    <div class="RecipeBox HM">
+
+      <div class="Foodname">
+        <p> Vagetarian Carbonara </p>
+       </div>
+
+            <!--this is the 3 boxes -->
+     <section id="RecipeInfo">
+      <div class="boxes">
+       <div class="RecipeInfo__wrapper">
+    
+    <!--time box--> 
+
+        <div class="RecipeInfo__item">
+         <div class="RecipeInfo__icon">
+           <img src="./images/time.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+         </div>
+         <h3 class="RecipeInfo__tittle"> Time</h3>
+         <p class="RecipeInfo__text" > Prep(15)-Cook(15) </p>
+        </div>
+     
+    <!--Serving box-->
+
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/serving.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Serving</h3>
+          <p class="RecipeInfo__text" > 4 servings </p>
+        </div>
+
+    <!-- Skill box-->
+  
+        <div class="RecipeInfo__item">
+          <div class="RecipeInfo__icon">
+            <img src="./images/level.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+          </div>
+          <h3 class="RecipeInfo__tittle"> Skill</h3>
+          <p class="RecipeInfo__text" > Low </p>
+         </div> 
+
+       </div>
+      </div>
+
+    </section>
+
+      <!--the inFo--> 
+  <div class= "Row">
+
+    <div class="left">
+      <img class="RecipeImg" src="./images/Mushroom_Carbonara.jpg" alt="pan filled with mushroom carbonara pasta" style="height:358px;" />
+    </div>
+ 
+    <div class="right">
+ 
+     <div class="Attribution">
+ 
+      <div class="RecipeName">Recipe Name: Vegetarian Carbonara with Mushrooms, Miso and Parmesan</div>
+      <div class="Cuisine">Cuisine: Fusion</div>
+      <div class="Course">Course: Main</div>
+      <div class="Dietary">Dietary: Vegetarian</div>
+       <div class="SpecialEquipment">Special Equipment: N/A </div>
+     </div>
+ 
+     <br>
+     <hr>
+    
+     <p>Image:
+      "<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/22508531@N08/49471971493">Mushroom carbonara</a>" by 
+          <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/22508531@N08">Like_the_Grand_Canyon</a> is licensed under 
+          <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/2.0/?ref=openverse">
+            CC BY-NC 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+          </a>
+       </p>
+       <p> Link: 
+       <a href="https://www.abc.net.au/everyday/vegetarian-carbonara-with-mushrooms-and-miso/12426392"> View full article here </a>
+       </p>
+ 
+ 
+     <br>
+     <hr>
+ 
+     <div class="Publisher">Publisher: ABC Everday</div>
+     <div class="DatePublished">Date Published: 9 Jul 2020</div>
+     <div class="DateUpdated">Date Updated: 26 Feb 2021</div>
+
+
+
+      </div>
+
+     </div>
+
+    </div>
+
+
+
+  <!-- Countries Categories ---------->
+
+  <!-- Recipe 1 -->
+  <div class="RecipeBox VN">
+
+    <div class="Foodname">
+     <p> Vietnamese Pho </p>
+    </div>
+
+       <img class="CountriesImg" src="./images/Vietnamese-pho.jpeg" alt=" Vietnamse Pho "/>
+
+        <div class="Attribution1">
+
+          <u><h3 class="RecipeInfo__tittle"> Ingredients </h3></u>
+          <p class="RecipeInfo__text" > 
+            - Marrow bones and Meaty bones <br>
+            - Thinly sliced raw meat <br>
+            - Yellow onions <br>
+            - Whole garlic <br>
+            - Fresh ginger <br>
+            - Whole spices: star anise, cloves, cinnamon sticks, black cardamom pods, fennel seeds, coriander seeds <br>
+            - Salt<br>
+            - Fish sauce<br>
+            - Sugar </p>
+
+          <u><h3 class="RecipeInfo__tittle"> Steps </h3></u>
+          <p class="RecipeInfo__text" > - Step 1:
+            Place stock and 2 cups (500ml) water in a saucepan with ginger, onion, garlic, star anise, cinnamon, sugar and fish sauce. Bring to the boil, then reduce heat to low. Cover and simmer for 20 minutes. Strain, discarding solids, then return soup to pan. Cover and return to the boil. </p>
+            
+            <p class="RecipeInfo__text" > - Step 2: Meanwhile, prepare noodles according to packet instructions. Drain well.. </p>
+            
+            <p class="RecipeInfo__text" > - Step 3: Divide the noodles among warmed soup bowls, then top with the sliced beef fillet. Pour over the hot soup mixture (the heat will gently cook the meat) and top with the bean sprouts. Serve garnished with chilli and fresh herbs. </p>
+        
+            <p> <a href="https://www.taste.com.au/recipes/quick-beef-pho/fd05492a-c9e7-4568-971d-74d56a844135"> View full recipe here </a>
+
+        </div>
+  </div>
+      
+    <!-- Recipe 2 -->
+
+    <div class="RecipeBox VN">
+
+      <div class="Foodname">
+       <p> Spring Rolls </p>
+      </div>
+  
+          <img class="CountriesImg" src="./images/spring-roll.jpeg" alt=" Vietnamse Spring Rolls "/>
+  
+          <div class="Attribution1">
+  
+            <u><h3 class="RecipeInfo__tittle"> Ingredients </h3></u>
+
+            <p class="RecipeInfo__text" > 
+              - 100 gm vermicelli noodles <br>
+              - 10 cooked prawns, coarsely chopped <br>
+              - ½ cup each coarsely chopped coriander and mint <br>
+              - ½ telegraph cucumber, cut into matchsticks <br>
+              - 10 rice paper wrappers <br>
+              - 5 oak leaf lettuce leaves, halved <br>
+              - 1 spring onion, thinly sliced <br>
+              - To serve: Vietnamese mint (optional) 
+             </p>
+
+  
+            <u><h3 class="RecipeInfo__tittle"> Steps </h3></u>
+            <p class="RecipeInfo__text" > - Step 1: Place vermicelli in a large bowl, pour over enough boiling water to cover completely and stand until vermicelli are tender (2-4 minutes). Strain, drain well, then cut into rough 10cm lengths with scissors and place in a bowl. Add prawn, coriander, mint and cucumber, season to taste and set aside. </p>
+              
+              <p class="RecipeInfo__text" > - Step 2: For dipping sauce, pound garlic in a mortar and pestle to a paste, pound in palm sugar to combine, then stir in remaining ingredients and set aside. </p>
+              
+              <p class="RecipeInfo__text" > - Step 3: Fill a large bowl with hot water. Working with a wrapper at a time, submerge wrapper in water to soften (10-30 seconds), then transfer to a clean damp tea towel. Working quickly, spoon about 1/4-cup prawn mixture along the centre of the wrapper, add half an oak lettuce leaf and some spring onion, fold in ends, then roll to form a sealed cylinder. Place on a tray lined with baking paper and cover with a damp tea towel. Serve with dipping sauce and Vietnamese mint. </p>
+          
+              <p> <a href="https://www.gourmettraveller.com.au/recipes/fast-recipes/vietnamese-rice-paper-rolls-13418"> View full recipe here </a>
+  
+          </div>
+    </div>
+    
+    <!-- Recipe 3 -->
+
+    <div class="RecipeBox TL">
+
+      <div class="Foodname">
+       <p> PadThai </p>
+      </div>
+  
+          <img class="CountriesImg" src="./images/padthai.jpeg" alt=" PadThai "/>
+  
+          <div class="Attribution1">
+  
+            <u><h3 class="RecipeInfo__tittle"> Ingredients </h3></u>
+
+            <p class="RecipeInfo__text" > 
+              - Kosher salt <br>
+              - 8 oz. wide rice noodles<br>
+              - 2 tbsp. lime juice<br>
+              - 2 tbsp. brown sugar<br>
+              - 1 tbsp. fish sauce<br>
+              - 1 tbsp. low-sodium soy sauce<br>
+              - 1/4 tsp. cayenne pepper<br>
+              - 2 tbsp. vegetable oil<br>
+              - 1 bell pepper, thinly sliced<br>
+              - 2 cloves garlic, minced<br>
+              - 2 eggs, lightly whisked<br>
+              - 1 lb. shrimp, peeled and deveined<br>
+              - Freshly ground black pepper<br>
+              - 2 green onions, thinly sliced<br>
+              - 1/4 c. roasted peanuts, chopped
+             </p>
+
+  
+            <u><h3 class="RecipeInfo__tittle"> Steps </h3></u>
+            <p class="RecipeInfo__text" > - Step 1: In a large pot of salted boiling water, cook noodles until al dente. Drain.</p>
+
+              
+              <p class="RecipeInfo__text" > - Step 2: In a small bowl, whisk together lime juice, brown sugar, fish sauce, soy sauce, and cayenne pepper. Set aside.</p>
+              
+              <p class="RecipeInfo__text" > - Step 3: In a large nonstick pan over medium-high heat, heat oil. Add bell pepper and cook until tender, about 4 minutes. Stir in garlic and cook until fragrant, about 1 minute more. Add the shrimp and season with salt and pepper. Cook until pink, about 2 minutes per side. </p>
+          
+              <p class="RecipeInfo__text" > - Step 4: Push the shrimp and vegetables to one side of the pan and pour in the egg. Scramble until just set then mix with the shrimp mixture. Add the cooked noodles and toss until combined. Pour in the lime juice mixture and toss until the noodles are coated.
+              </p>
+              <p class="RecipeInfo__text" > - Step 5: Garnish with green onions and roasted peanuts before serving.
+              </p>
+
+              <p> <a href="https://www.delish.com/cooking/recipe-ideas/recipes/a53823/easy-pad-thai-recipe/"> View full recipe here </a>
+  
+          </div>
+    </div>
+  
+    <!-- Recipe 4 -->
+
+    <div class="RecipeBox TL">
+
+      <div class="Foodname">
+       <p> Tom Yum Soup</p>
+      </div>
+  
+          <img class="CountriesImg" src="./images/tomyum.jpeg" alt=" Tomyum Soup "/>
+  
+          <div class="Attribution1">
+  
+            <u><h3 class="RecipeInfo__tittle"> Ingredients </h3></u>
+
+            <p class="RecipeInfo__text" > 
+              - Shrimp Stock<br>
+              - Shrimp<br>
+              - Lime Juice<br>
+              - Thai Chilies<br>
+              - Thai Roasted Chili Paste<br>
+              - Fish Sauce<br>
+              - Mushrooms
+
+              
+             </p>
+
+  
+            <u><h3 class="RecipeInfo__tittle"> Tips </h3></u>
+            <p class="RecipeInfo__text" > - Tip 1: The best Tom Yum calls for shrimp stock, which you can make by boiling the shrimp heads with water. A good stock guarantees the great taste of Tom Yum. However, you can also make it with water or canned chicken stock. </p>
+            <p class="RecipeInfo__text" > - Tip 2:Another secret is the use of nam prik pao (Thai roasted chili paste). You can’t do without the aromatics: galangal, lemongrass, kaffir lime leaves and bird’s eye chilies. </p>
+            <p class="RecipeInfo__text" > - Tip 3:To make Bangkok-style Tom Yum which is creamier and whiter in color, add a few tablespoons of evaporated milk to the soup. </p>
+
+
+              
+          
+              <p> <a href="https://rasamalaysia.com/tom-yum-recipe/"> View full recipe here </a>
+  
+          </div>
+    </div>
+  
+<!-- Recipe 5 -->
+
+<div class="RecipeBox Au">
+
+  <div class="Foodname">
+   <p> Lamington </p>
+  </div>
+
+      <img class="CountriesImg" src="./images/lamington.webp" alt=" Lamington "/>
+
+      <div class="Attribution1">
+
+        <u><h3 class="RecipeInfo__tittle"> Ingredients </h3></u>
+
+        <p class="RecipeInfo__text" > 
+         - 1 X 3 second spray Always Fresh Simply Canola Spray  <br>
+         - 3 eggs    <br>
+         - 3/4 cups caster sugar   <br>
+         - 1 tsp vanilla essence<br>
+        - 3/4 cups plain white flour   <br> 
+         - 1/4 cup cornflour    <br>
+         - 1 1/2  tsp baking powder    <br>
+         - 80g reduced-fat dairy blend spread (with canola)<br>
+         - 3 tbsp cocoa powder    <br>
+         - 2 cup icing sugar   <br>
+         - 1/3 cup desiccated coconut
+          
+          
+         </p>
+
+
+        <u><h3 class="RecipeInfo__tittle"> Steps </h3></u>
+        <p class="RecipeInfo__text" > - Step 1:Preheat oven to 190°C. Grease and line base of a 20cm square cake tin with baking paper. </p>
+
+          <p class="RecipeInfo__text" > - Step 2: Beat eggs with a pinch of salt. Add sugar and half of the vanilla.
+          </p>
+          
+          <p class="RecipeInfo__text" > - Step 3:
+            Beat until thick and creamy. In a separate bowl, sift together flour, cornflour and baking powder. Add to egg mixture, then carefully fold through 60g melted dairy blend. </p>
+      
+            <p class="RecipeInfo__text" > - Step 4: Pour cake mixture into prepared tin and bake for approximately 30 minutes, or until cake springs back when lightly touched. Leave in tin for 10 minutes before turning out onto a wire cake rack to cool. Cut into 20 squares. Meanwhile to make icing, dissolve cocoa in 1/3 cup boiling water. Place icing sugar in a medium size bowl. Add cocoa mixture, remaining canola blend and remaining vanilla essence. Stir well to combine.
+          </p>
+
+          <p class="RecipeInfo__text" > - Step 5: Using a fork, skewer each cake square then spoon over warm icing to coat. Lightly sprinkle with coconut, then arrange on a lined baking tray and set aside.
+          </p>
+          <p> <a href="https://www.kidspot.com.au/kitchen/recipes/easy-lamingtons/5m0dwla4"> View full recipe here </a>
+
+      </div>
+</div>
+
+  
+<!-- Cookbook Categories ---------->
+<!-- Book1 ---------->
+
+<div class="RecipeBox 1">
+
+  <div class="Foodname">
+    <p> Food of the Italian Islands </p>
+   </div>
+
+ 
+
+<!--the inFo--> 
+<div class= "Row">
+
+<div class="left">
+<img class="RecipeImg" src="./images/book.webp" alt="Food of the Italian Islands" style="height: 360px;"/>
+</div>
+
+<div class="right">
+
+<div class="Attribution2">
+  <p> Author: Katie Parla </p>
+  <p> Country: Italy </p>
+  <p> Price: $35.00  </p>
+  <p> Released date: March 7, 2023 </p>
+  <p> Description: Food of the Italian Islands is a transportive cookbook inviting readers through Sicily, Sardinia, and Italy’s lesser-known island destinations so you can sink your teeth into the secrets of their rustic, romantic dishes. </p>
+
+</div>
+
+<br>
+<hr>
+<div class="BookCom">
+<div class='CommentSec'> Comment </div>
+</div>  
+<p>"I can’t blurb this cookbook in good conscience because any peek inside will enrage you at being wherever you are instead of the wonderful Italian islands Katie has so thoughtfully explored and shared culinary insights from. Buyer beware!" </p>
+</div>
+</p>
+</div>
+
+<div class="Attribution">
+ <p>The book’s 21 features provide historical insight while unveiling island traditions and pleasures such as the offal delicacies dominating Palermo’s street food scene, urchin diving in Ponza and an overview on the boozy choose-your-own-journey to making infused spirits. From hitting the unpaved backroads in a FIAT Panda or taking a jaunt through the Venetian lagoon in Katie’s fishing boat, Laura, Food of the Italian Island offers full immersion down to the mode of transportation. Organized playfully with a thematic approach, with travel tips and pairing suggestions throughout, Food of the Italian Islands is a siren call for readers to cook island food from wherever they are and with whatever they have. </p>
+
+
+  
+    
+</div>
+</div>
+
+ <!-- Chef Categories ---------->
+ <!-- Female ---------->
+ 
+<div class="RecipeBox Fe">
+
+  <div class="Foodname">
+   <p> Anne-Sophie Pic </p>
+  </div>
+
+      <img class="CountriesImg" src="./images/Anne.jpeg" alt=" Anne-Sophie Pic "/>
+
+      <!--this is the 3 boxes -->
+<section id="RecipeInfo">
+  <div class="boxes">
+   <div class="RecipeInfo__wrapper">
+
+<!--Michelin star--> 
+
+    <div class="RecipeInfo__item">
+     <div class="RecipeInfo__icon">
+       <img src="./images/chef-01.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+     </div>
+     <h3 class="RecipeInfo__tittle"> Michelin</h3>
+     <p class="RecipeInfo__text" > 8 stars </p>
+    </div>
+ 
+<!--Serving box-->
+
+    <div class="RecipeInfo__item">
+      <div class="RecipeInfo__icon">
+        <img src="./images/chef-02.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+      </div>
+      <h3 class="RecipeInfo__tittle"> Restaurant</h3>
+      <p class="RecipeInfo__text" > 5  </p>
+    </div>
+
+<!-- Skill box-->
+
+    <div class="RecipeInfo__item">
+      <div class="RecipeInfo__icon">
+        <img src="./images/chef-03.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+      </div>
+      <h3 class="RecipeInfo__tittle"> Nationality</h3>
+      <p class="RecipeInfo__text" > French </p>
+     </div> 
+
+   </div>
+  </div>
+
+</section>
+      
+</div>
+
+<!-- Male ---------->
+ 
+<div class="RecipeBox Ma">
+
+  <div class="Foodname">
+   <p> Gordon Ramsay </p>
+  </div>
+
+      <img class="CountriesImg" src="./images/GordonRamsey.jpg" alt="Gordon Ramsay "/>
+
+      <!--this is the 3 boxes -->
+<section id="RecipeInfo">
+  <div class="boxes">
+   <div class="RecipeInfo__wrapper">
+
+<!--Michelin star--> 
+
+    <div class="RecipeInfo__item">
+     <div class="RecipeInfo__icon">
+       <img src="./images/chef-01.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+     </div>
+     <h3 class="RecipeInfo__tittle"> Michelin</h3>
+     <p class="RecipeInfo__text" > 7 stars </p>
+    </div>
+ 
+<!--Serving box-->
+
+    <div class="RecipeInfo__item">
+      <div class="RecipeInfo__icon">
+        <img src="./images/chef-02.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+      </div>
+      <h3 class="RecipeInfo__tittle"> Restaurant</h3>
+      <p class="RecipeInfo__text" > 35 </p>
+    </div>
+
+<!-- Skill box-->
+
+    <div class="RecipeInfo__item">
+      <div class="RecipeInfo__icon">
+        <img src="./images/chef-03.png" style="height: 5em; margin-right: 0.125em; display: inline;" >
+      </div>
+      <h3 class="RecipeInfo__tittle"> Nationality</h3>
+      <p class="RecipeInfo__text" > Scottish </p>
+     </div> 
+
+   </div>
+  </div>
+
+</section>
+      
+</div>
+   
+  
+  </body>
+
+</html>

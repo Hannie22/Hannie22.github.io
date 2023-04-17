@@ -1,0 +1,294 @@
+/* z-index order */
+
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: tittle ;
+  src: url(fonts/VG5000-Regular.otf);
+
+}
+
+@font-face {
+  font-family: lower ;
+  src: url(fonts/SpaceMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: lowercase ;
+  src: url(fonts/SpaceMono-Italic.ttf);
+}
+
+
+:root{
+  --col-01:#ffffff;
+  --col-02:#000000;
+  --col-03:#4831D4;
+  --col-04:#CCF381;
+  --col-05: #2d0e5c;
+  --col-06: #796fd3;
+  --col-07: #3a3976;
+
+
+
+}
+
+body{
+  background-color: var(--col-03) ;
+  color: var(--col-04);
+
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;  
+
+}
+
+hr{ 
+   margin-bottom: 1rem;
+   border: 1px solid var(--col-04);
+   border-radius: 10px;
+   
+}
+
+h1{
+  font-size: 5em;
+  text-align: center;
+  font-family: "tittle";
+  text-shadow:   0 0 10px var(--col-06),
+                 0 0 20px #c3e388;
+  
+}
+
+h2{
+  font-size: 1em;
+  text-align: center;
+  font-family: "tittle";
+  
+}
+
+.RecipeBox {
+  flex-direction: column;
+  border-style: solid;
+  border-color: var(--col-04);
+  border-width: 2px;
+  padding: 30px;
+
+  margin: 0 auto;
+  overflow: auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px var(--col-05);
+  margin-bottom: 50px;
+
+  display: grid;
+  place-items: center;
+
+  width: 1050px;
+  height: 690px;
+
+}
+
+
+.Row{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 27px 30px; 
+  max-width: 1170px;
+  font-family: "lower";
+  font-size: .8em;}
+
+.left.RecipeImg{
+  overflow: hidden;
+}
+
+.RecipeImg{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid var(--col-04);
+
+}
+
+.Foodname{
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "tittle";
+}
+
+
+.FilterSection{
+  font-family: "lower";
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-left: 210px;
+
+}
+
+
+.FilterButton{
+  margin: .5em;
+  padding: .5em .8em;
+  font-family: "tittle";
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--col-04);
+  background-color: transparent;
+  border: 2px solid var(--col-04);
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+  
+
+}
+
+.FilterButton:focus {
+  color: var(--col-03);
+  border: 2px solid var(--col-06);
+  box-shadow: 0px 0px 0px 1px var(--col-07);
+  animation: anim-shadow .3s forwards;
+  background-color: var(--col-04);
+
+}
+
+@keyframes anim-shadow{
+  100% {
+  box-shadow: 0px 0px 10px 5px var(--col-07);}
+  }
+
+
+/* 3 boxes style */
+.RecipeInfo__wrapper{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  align-items: stretch;
+  margin-bottom: 2em;
+}
+
+.RecipeInfo__item{
+  background-color: var(--col-03);
+  padding: 10px 10px;
+  text-align: center;
+  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+  border:  2px solid var(--col-04);
+  box-shadow: 5px 5px 15px var(--col-05);
+
+}
+
+.RecipeInfo__icon {
+  width: 131px;
+  height: 68px;
+  margin: 0 auto;
+  margin-bottom: .2rem;
+  
+}
+
+.RecipeInfo__tittle{
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--col-04);
+  font-family: "tittle";
+
+}
+
+.RecipeInfo__text{
+  font-size: .7em;
+  color: var(--col-04);
+  font-family: "lower";
+}
+
+.RecipeLink{
+   Color: var(--col-04);
+
+}
+
+.RecipeLink.a{
+  Color: var(--col-04);
+}
+
+a{
+  color: var(--col-04);
+  font-family: "lowercase";
+}
+    
+
+.Attribution{
+  background-color: var(--col-04);
+  color: var(--col-03);
+  padding: .8rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px var(--col-07);
+  border: 2px solid var(--col-06);
+
+
+}
+
+.Publisher{
+  font-family: "lowercase";
+
+}
+
+.DatePublished{
+   font-family: "lowercase";
+}
+
+.DateUpdated{
+  font-family: "lowercase";
+
+}
+
+/*chef section*/
+
+
+.CountriesImg{
+  height: 25rem;
+  display: block;  
+  margin-left: auto;  
+  margin-right: auto;  
+  margin-bottom: 2rem;
+  border: 2px solid var(--col-04);
+  border-radius: 10px;
+  
+}
+
+.Attribution1{
+  background-color: var(--col-03);
+  color: var(--col-04);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px var(--col-05);
+  border: 2px solid var(--col-04);
+  margin: 0 auto;
+  width: 960px;
+  }
+
+  .Attribution2{
+    background-color: var(--col-03);
+    color: var(--col-04);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px var(--col-05);
+    border: 2px solid var(--col-04);
+    margin: 0 auto;
+    width: 200x;
+    }
+
+  .BookCom{
+    font-family: "lowercase";
+  }
+
+  .CommentSec{
+  font-size: 1em;
+  font-family: "tittle";
+  margin-bottom: .3rem;
+}
+
