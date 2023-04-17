@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script src="./filter.js" defer></script>
-    <!-- <script src="./arrays-&-for-loops.js" defer></script> -->
 
     <title>exercise 2</title>
 
@@ -20,9 +19,14 @@
     <h1>RECIPE LIST</h1>
     <h2> /Interactive Media 1/</h2>
 
+
+      <!-- navigation bar -->
+
     <nav>
 
     <div class="FilterSection">     
+
+      <!-- author category -->
 
       <details class="FilterBox">
         <summary>Author</summary>
@@ -31,6 +35,13 @@
         <button class="FilterButton" onclick='filterCategory("HM", this)'>Hetty McKinnon</button>
         <button class="FilterButton" onclick='filterCategory("CLM", this)'>Carla Lalli Music</button>
 
+      <!-- these are categories that I have been added  -->
+      <!-- I am thinking of categorise that are related to food/recipe  -->
+
+      
+      <!-- countries category -->
+      <!-- each country has different food recipe so there will be a lot to tell  -->
+      <!-- I chose 3 specific countries which are Vietname (my country), Australia (where I live now) and ThaiLand -->
 
       </details>
 
@@ -40,13 +51,22 @@
         <button class="FilterButton" onclick='filterCategory("Au", this)'>Australia</button>
         <button class="FilterButton" onclick='filterCategory("TL", this)'>Thailand</button>
 
+      <!-- cookbook category -->
+      <!-- based on the reviews/authors/time release, cookbook can be sperated into many section. I chose the year release to the my section as 
+      it very easy to research about it  -->
 
-      </details>
+
+    </details>
 
       <details class="FilterBox">
         <summary>Cookbook</summary>
         <button class="FilterButton" onclick='filterCategory("1", this)'>2023</button>
       </details>
+
+      <!-- chef category -->
+      <!-- cooking industry is the popular topic that has many information to tell, among that, the ranking betwween 
+        chef is one of the most debatable topic so I chose this to be my category -->
+      
 
       <details class="FilterBox">
         <summary>Chef</summary>
@@ -61,6 +81,7 @@
 
   </nav>
 
+    <!-- author category -->
 
     <!-- Recipe 1 -->
   <div class="RecipeBox HM">
@@ -69,7 +90,13 @@
       <p> Puttanesca </p>
      </div>
 
+
       <!--this is the 3 boxes -->
+      <!--those icons was vectorized by me in Adobe Illustrator -->
+      <!--the best way to convey information is through illustration -->
+
+      <!-- RecipeInfo is the base for me to create smaller <div class --> 
+
      <section id="RecipeInfo">
         <div class="boxes">
          <div class="RecipeInfo__wrapper">
@@ -109,11 +136,16 @@
 
       </section>
   
+     <!--the column section-->
+
      <div class= "Row">
 
       <div class="left">
         <img class="RecipeImg" src="./images/Puttanesca.jpg" alt="bowl of puttanesca pasta" />
       </div>
+
+      <!--I change the position of some <div-->
+      <!--Groupping <div that has similar topic, for example: "publisher" "DatePublished" "DateUpdated"-->
 
       <div class="right">
 
@@ -1431,6 +1463,7 @@
     <div class="Foodname">
      <p> Vietnamese Pho </p>
     </div>
+  <!--  this recipe will be sperated into 2 parts: ingredients and steps -->
 
        <img class="CountriesImg" src="./images/Vietnamese-pho.jpeg" alt=" Vietnamse Pho "/>
 
@@ -1700,7 +1733,9 @@
 
       <img class="CountriesImg" src="./images/Anne.jpeg" alt=" Anne-Sophie Pic "/>
 
-      <!--this is the 3 boxes -->
+<!--this is the 3 boxes -->
+<!-- I made new icons for 3 boxes (using Adobe Illustrator again)-->
+
 <section id="RecipeInfo">
   <div class="boxes">
    <div class="RecipeInfo__wrapper">
@@ -1715,7 +1750,7 @@
      <p class="RecipeInfo__text" > 8 stars </p>
     </div>
  
-<!--Serving box-->
+<!--Restaurant-owned box-->
 
     <div class="RecipeInfo__item">
       <div class="RecipeInfo__icon">
@@ -1725,7 +1760,7 @@
       <p class="RecipeInfo__text" > 5  </p>
     </div>
 
-<!-- Skill box-->
+<!-- Nationality box-->
 
     <div class="RecipeInfo__item">
       <div class="RecipeInfo__icon">
@@ -1767,7 +1802,7 @@
      <p class="RecipeInfo__text" > 7 stars </p>
     </div>
  
-<!--Serving box-->
+<!--Restaurant-owned box-->
 
     <div class="RecipeInfo__item">
       <div class="RecipeInfo__icon">
@@ -1777,7 +1812,7 @@
       <p class="RecipeInfo__text" > 35 </p>
     </div>
 
-<!-- Skill box-->
+<!-- nationality box-->
 
     <div class="RecipeInfo__item">
       <div class="RecipeInfo__icon">

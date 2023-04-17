@@ -22,6 +22,10 @@
   src: url(fonts/SpaceMono-Italic.ttf);
 }
 
+/* color palette */
+/* the main color is yellow and purple, I use two-color combination to create the consistency and evoke the distinct visual style
+which is minimalism */
+
 
 :root{
   --col-01:#ffffff;
@@ -31,8 +35,6 @@
   --col-05: #2d0e5c;
   --col-06: #796fd3;
   --col-07: #3a3976;
-
-
 
 }
 
@@ -46,12 +48,14 @@ body{
 
 }
 
+
 hr{ 
    margin-bottom: 1rem;
    border: 1px solid var(--col-04);
    border-radius: 10px;
    
 }
+
 
 h1{
   font-size: 5em;
@@ -99,6 +103,7 @@ h2{
   font-family: "lower";
   font-size: .8em;}
 
+
 .left.RecipeImg{
   overflow: hidden;
 }
@@ -145,6 +150,8 @@ h2{
   
 
 }
+
+/* add interaction for the buttons */
 
 .FilterButton:focus {
   color: var(--col-03);
@@ -246,7 +253,7 @@ a{
 
 }
 
-/*chef section*/
+/* other categories section*/
 
 
 .CountriesImg{
