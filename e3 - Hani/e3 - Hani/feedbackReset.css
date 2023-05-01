@@ -1,0 +1,54 @@
+/*
+  Green line is my code comment - Hani 
+*/
+
+
+/* navigation bar 
+-----> */
+
+nav ol li a {
+  color: var(--col-01);
+  text-decoration: none;
+  cursor: default;
+}
+
+/* while hovering, the text will be bolder than its usual self */ 
+nav ol li a:hover{
+  font-weight: 700;
+}
+
+/* adding small retangular box next to each categories */ 
+/* function: highlight the part which has been choosen */ 
+
+nav ol li a::after{
+  content: '';
+  width: 30px;
+  height: 4px;
+  background: var(--col-01);
+  display: none;
+  /* style the distance between the text & the box */ 
+  margin-left: 10px;
+  margin-bottom: 3px;
+  }
+
+  
+/* inline-block: the setting of margins/padding are kept the respected */ 
+nav ol li a:hover::after{
+  display: inline-block;
+}
+ 
+
+#mode-button{
+  background-color: var(--col-01);
+  border: 0;
+  color: var(--col-02);
+  text-decoration: none;
+  cursor: default;
+  border-radius: 10px;
+  padding: 2px 8px;
+}
+
+
+
+
+
