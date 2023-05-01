@@ -147,7 +147,7 @@ li ul{
   width: 130px;
   border-radius: 1.5em;
   font-family: "Loading";
-
+  color: var(--col-01);
   /* add the border-box to the loading text => turn it into a button */
   border: 2px solid;
   border-color: transparent;
