@@ -1,0 +1,262 @@
+/*
+  Green line is my code comment - Hani 
+*/
+
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Loading;
+  src: url(/font/VG5000-Regular.otf);
+}
+
+:root{
+
+  --col-01:#171219;
+  --col-02:#f2fbeb;
+  --col-04:#b6e878;
+ 
+  /* gradient color has been added to the CSS variables
+-----> */
+
+  --gradient-05: linear-gradient(90deg,#833ab4, #fd1d1d, #fcb045,#0000ff,#833ab4, #fd1d1d, #fcb045,#0000ff,#833ab4);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+
+body{
+  padding: 1rem;
+  background-color: var(--col-02);
+  color: var(--col-01);
+   /* when choosing between dark and light mode, a slight transition is applied */
+  transition: 0.5s all ease-in-out;
+   
+  /* While loading the page, a slight fade-in transition is applied */
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  
+  /* the animation stops when the page finishes loading */
+  animation-fill-mode:forwards;
+
+ 
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+
+nav {
+  margin-top: 1rem;
+}
+
+nav li{
+  font-size: 1rem;
+}
+
+section{
+  margin-bottom: 2rem;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2rem;
+
+}
+
+p{
+  font-size: 1rem;
+  margin-top: 1rem;
+  
+}
+
+figcaption{
+  width: fit-content;
+}
+
+dl ul{
+  margin-bottom: 0;
+}
+
+li{
+  font-size: 1rem;
+}
+
+dd{
+  padding-left: 60px;
+}
+
+li ul{
+  padding-left: 40px;
+}
+
+.img-wrapper{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.img-figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-img{
+  width: 80%;
+}
+
+.res-columns{
+  column-width: 25rem;
+}
+
+#mode-button{
+  float: right;
+  /* note the use of position: sticky to keep the button on the page even with scrolling */
+  position: sticky;
+  top: 1rem;
+}
+
+/* code for loading page */
+
+#load-body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+  
+
+ /* when choosing between dark and light mode, a slight transition is applied */
+
+#load-link{
+  padding: 5px;  
+  width: 130px;
+  border-radius: 1.5em;
+  font-family: "Loading";
+
+  /* add the border-box to the loading text => turn it into a button */
+  border: 2px solid;
+  border-color: transparent;
+  
+  /* there are many ways to add gradient color to the border and this is the most simple and easiest way that I found out lately  */
+  /* fill in the padding inside with the solid color, then following by the gradient color  */
+
+  background: linear-gradient(var(--col-02),var(--col-02)) padding-box, linear-gradient(90deg,#833ab4, #fd1d1d, #fcb045,#0000ff);
+}
+
+  /* while hovering, the color of the background & inside-text will be changed  */
+  /* Accent the interactions, showing that the button should be cliked on to load page  */
+
+.active, #load-link:hover{
+  border-color: transparent;
+  background: linear-gradient(var(--col-01),var(--col-01)) padding-box, linear-gradient(90deg,#833ab4, #fd1d1d, #fcb045,#0000ff);
+  color: var(--col-02);
+  }
+
+/* throbber while page is fake loading */
+#load-throbber{
+  /* the load-throbber is made into a gradient loading bar/ 
+  The palette is as same as the load-link to create the consistency in design  */
+
+  /* the idea of the loading bar: a sign telling users to wait until the page finish loading */
+  position: relative;
+  width: 250px;
+  height: 21px;
+  border-radius: 1.5em;
+  /* we also initially set display to none so it only shows once the link is clicked */
+  display: none;
+  }
+
+
+#load-throbber::before
+{ content: '';
+  position: absolute;
+  inset: 0; 
+  background: var(--gradient-05);
+
+  /* 20s is the speed of the loading bar */
+  animation: animate 20s linear infinite;
+  background-size: 500%;
+  border-radius: 1.5em;
+  width: 250px;
+  height: 21px;
+  }
+
+
+  #load-throbber::after
+  { content: '';
+    position: absolute;
+    inset: 0; 
+    background: var(--gradient-05);
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    border-radius: 1.5em;
+    width: 250px;
+    height: 21px;
+    }
+
+
+  @keyframes animate
+  { 
+    0% 
+    { 
+      background-position: 0 0;
+    }
+    0%
+    {
+      background-position: 500% 0;
+    }
+
+  }
+
+
+
+
+/* Media Queries */
+
+/* medium devices 600 - 992 */
+@media only screen and (min-width: 600px) {
+  :root{
+    font-size: 20px;
+  }
+  
+  .img-wrapper{
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+
+}
+
+/* medium devices 992 + */
+@media only screen and (min-width: 992px) {
+  :root{
+    font-size: 24px;
+  }
+
+  .img-wrapper{
+    max-width: fit-content;
+    float: right;
+    margin: 1.5rem;
+  }
+
+}
+
+@media (prefers-reduced-motion) {
+  :root{
+    scroll-behavior: auto;
+  }
+}
