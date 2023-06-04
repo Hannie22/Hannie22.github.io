@@ -530,7 +530,7 @@
 
 
 
-#click{
+#clickk{
     display:none;
 }
 
@@ -594,7 +594,7 @@
 
 
 
-.click-me:hover{
+.clickk-me:hover{
     background: #7d8597;
 }
     
@@ -610,7 +610,7 @@
     }
 
 
-#click:checked ~ .content{
+#clickk:checked ~ .content{
     opacity: 1;
     visibility: visible;
     position: fixed;
