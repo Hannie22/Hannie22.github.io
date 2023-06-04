@@ -1,0 +1,739 @@
+/*
+  Green line is my code comment - Hani 
+*/
+
+
+
+*{
+    box-sizing: border-box;
+    background-origin: border-box;
+    margin: 0;
+  }
+  
+
+  /* The list of font that I used */
+  /* It takes me lots of time searching for the unique and readable fonts. */
+  @font-face {
+    font-family: tittle ;
+    src: url(fonts/VCR_OSD_MONO_1.001.ttf);
+  
+  }
+  
+  @font-face {
+    font-family: redbox ;
+    src: url(fonts/DFVN\ afronaut.otf);
+  
+  }
+
+  @font-face {
+    font-family: yellowbox ;
+    src: url(fonts/CHARLEY.otf);
+  
+  }
+
+  @font-face {
+    font-family: specialbox ;
+    src: url(fonts/Menlo-Regular.ttf);
+  
+  }
+
+  @font-face {
+    font-family: purplebox ;
+    src: url(fonts/MJ\ Milestone\ Script.ttf);
+  
+  }
+
+  
+  @font-face {
+    font-family: bluebox ;
+    src: url(fonts/maginors-maginors-400.otf);
+  
+  }
+
+  @font-face {
+    font-family: greenbox ;
+    src: url(fonts/SebastianRegular-3z7g6.ttf);
+
+  }
+
+  @font-face {
+    font-family: lambox;
+    src: url(fonts/SevenEleven-rPm7.ttf);
+  }
+
+  @font-face {
+    font-family: pinkbox;
+    src: url(fonts/MosteraRegular-X38pZ.otf);
+  }
+
+
+  @font-face {
+    font-family: palebox;
+    src: url(fonts/DFVN\ Chloe\ Regular.otf);
+  }
+
+ @font-face {
+    font-family: graybox ;
+    src: url(fonts/RaginyItalicita12-WyM4V.otf);
+}
+
+ @font-face {
+    font-family: rainbowbox;
+    src: url(fonts/DFVN\ STAMPA\ V1.otf);
+ }
+
+ @font-face {
+    font-family: inputbox;
+    src: url(fonts/ALHandwritingWhimsyRegular.otf);
+ }
+
+  
+  /* color palette */
+  /* the main color is black and white, I don't use much CSS properties as the amount of colors that I use is quite large */
+  
+  :root{
+    --col-01:#e6dede;
+    --col-02:#000000;
+    
+  
+  }
+  
+  body{
+    background-color: var(--col-01) ;
+    color: var(--col-02);
+  
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;  
+    
+  }
+  
+  
+  hr{ 
+     margin-bottom: 1rem;
+     border: 1px solid var(--col-04);
+     border-radius: 10px;
+     
+  }
+  
+  
+  .title{
+    font-size: 4em;
+    font-family: "tittle";
+    padding: 50px;
+    text-align: center;
+  }
+
+  
+
+  /* I intent to use flex but then after seeing the video showing that difference between flew and column, I decide to use column instead */
+  /* As I have never try this before, I find it quite difficult for me to get along with it, the hardest part is I have to make the 
+  grid with different size in no particular order */
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+
+
+    justify-content: center;
+    letter-spacing: -0.2px;
+    padding: 10px 40px;
+        
+  }
+
+  .box {
+    padding: 1rem;
+  }
+  
+  /* I used grid span to expand the width and the height of each text-box */
+
+  .red{
+    grid-row: span 4;
+    height: 630px;
+    border-radius: 30px;
+    border: 2px solid var(--col-02);
+    
+    background: #f95738;
+    color: #0d3b66;
+
+  }
+
+    /* Then I added the hover feedback manually for each box */
+
+  .red:hover{
+    transform: rotate(180deg);
+    
+    background: #2a6f97;
+    color: #ece3e3;
+  }
+
+
+  .boxred_vertical, .p {
+    position: relative;
+
+    /* I change the original direction of the text */
+    writing-mode: vertical-rl;
+    font-size: 60px;
+    transform: rotate(-180deg);
+    line-height: 70px;
+    font-family: "redbox";
+    left: 10px;
+    text-align: center;
+    padding: 20px;
+
+  }
+
+
+
+
+  .yellow{
+    grid-row: span 2;
+    border: 2px solid var(--col-02);
+    color: #1260E7;
+    border-radius: 30px;
+    background: #f6bd60;
+    }
+
+    .boxyellow_text:after{
+        content: "SOMETIMES YOU HAVE TO KNOW."
+        }
+
+    .boxyellow_text:hover::after{
+        content: "SOMETIMES THE TRUTH IS HARD.";
+        
+    }
+    
+  .boxyellow_text{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 55px;
+    font-family: "yellowbox";
+    font-weight: 200px;
+    letter-spacing: 5px;
+    line-height: 65px;
+
+}
+
+
+
+  .blue{
+    grid-column: span 2;
+    grid-row: span 2;
+    border-radius: 40px;
+    border: 2px solid var(--col-02);
+    color: #fd1d1d;
+    transform: scale(-1, 1);
+    background: #ffafcc;
+    
+    
+    
+  }
+
+  .blue:hover{
+    background: #fb6f92;
+    transform: scale(1, 1);
+    color: #ece3e3;
+
+
+  }
+
+  .boxblue_text{
+    padding-top: 35px;
+    font-size: 45px;
+    font-family: "bluebox";
+    letter-spacing: 5px;
+    line-height: 50px;
+    padding-left: 20px;
+
+
+
+}
+
+
+
+
+  .green{
+    grid-row: span 2;
+    grid-column: span 2;
+    border: 2px solid var(--col-02);
+    border-radius: 40px;
+    border:2px solid var(--col-02);
+    
+
+    color: #fec89a;
+    background: #957fef;
+
+    transform: scale(1, -1);
+
+
+
+}
+
+  .boxgreen_text{
+    font-size: 32px;
+    line-height: 50px;
+    padding-top: 35px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    text-align: center;
+    font-family: "greenbox";
+
+    }
+
+.green:hover{
+    transform: scale(1, 1);
+    color: #e7c6ff;
+    background: #e29578;
+
+
+    }
+
+.lam{
+    grid-row: span 2;
+    border: 2px solid var(--col-02);
+    border-radius: 40px;
+    color: #ddbea9;
+    background: #309e8e;
+    height: 300px;
+    width: 300px;
+
+}
+
+.boxlam_text{
+    font-family: "lambox";
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 30px;
+    letter-spacing: 2px;
+    writing-mode: vertical-rl;
+    padding-left: 70px;
+}
+
+.lam:hover{
+    transform: rotate(-90deg);
+    color: #d4e09b;
+    background: #a44a3f;
+}
+
+
+/* I called this box special because the animation of it will run infinitely */
+
+.special{ 
+    border-radius: 20px;
+    
+    letter-spacing: -0.2px;
+    padding: 10px 20px;
+    margin: 20px 40px;
+    height: 90px;
+
+    border:2px solid var(--col-02);
+    background: #3f37c9;
+    color: #ff99c8;
+
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+
+
+    }
+    
+
+    .boxspecial_text{
+    font-size: 45px;
+    font-family: "specialbox";
+    font-weight: 100px;
+    font-weight: bolder;
+    font-stretch: 100%;
+    white-space: nowrap;
+    padding: 8px .5rem;
+
+    animation: anim 6000ms linear infinite;
+    
+    }
+   
+    @keyframes anim{
+        0%{transform: translateX(0);}
+        100%{transform: translateX(-50%);}
+    }
+
+
+  .pink{
+    grid-row: span 2;
+    grid-column: span 3;
+    border-radius: 40px;
+    border:2px solid var(--col-02);
+    background: #197278;
+    color: #f9c74f;
+
+    
+  }
+
+  .pink:hover{
+    color: #197278;
+    background: #f9c74f;
+  }
+
+  .boxpink_text{
+    font-size: 28px;
+    font-family: "pinkbox";
+    line-height: 45px;
+    padding-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    
+  }
+
+  .purple{
+    width: 300px;
+    height: 300px;
+    grid-row: span 2;
+    border: 2px solid var(--col-02);
+    border-radius: 50%;
+    background: #80a1d4;
+    color: #ded9e2;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+ }
+
+ @-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+ }
+ @-moz-keyframesspin spin{
+    100%{-webkit-transform: rotate(360deg);}
+ }
+@keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+ }
+    
+    
+
+.boxpurple_text{
+    font-family: "purplebox";
+    font-size: 50px;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 50px;
+    letter-spacing: 2px;
+
+    
+}  
+
+.purple:hover{
+    animation: none;
+    }
+
+
+ .rainbow{
+    grid-row: span 2;
+    border: 2px solid var(--col-02);
+    border-radius: 40px;
+    color:#f0a6ca;
+    background: #a663cc;
+    transform: scale(-1, -1);
+
+
+ }
+
+ .rainbow:hover{
+    transform: scale(1,1);
+    color:#585123;
+    background: #f58549;
+}
+
+
+ .boxrainbow_text{
+    font-family: "rainbowbox";
+    font-size: 30px;
+    padding-top: 25px;
+    padding-left: 5px;
+
+ }
+
+.gray{
+    grid-row: span 2;
+    grid-column: span 2;
+    border: 2px solid var(--col-02);
+    border-radius: 40px;
+    color:#a2d3c2;
+    background: #c13333;
+    transform: scale(-1, 1);
+
+
+    }
+
+  .gray:hover{
+    transform: scale(1, 1);
+    color:#ff3864;
+    background: #571089;
+
+}
+
+ .boxgray_text{
+    font-family: "graybox";
+    text-align: center;
+    font-size: 50px;
+    padding-top: 35px;
+    padding: 5px;
+    }   
+
+.pale{
+    grid-row: span 2;
+    grid-column: span ;
+    border: 2px solid var(--col-02);
+    border-radius: 40px;
+    color:#a41623;
+    background: #ffb563;
+    transform: rotate(-180deg);
+}
+
+
+.pale:hover{
+    transform: rotate(360deg);
+    color: #f85e00;
+    background: #ffd29d;
+    }
+
+
+.boxpale_text{
+    font-family: "palebox" ;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 35px ;
+    text-transform: capitalize;
+}
+
+
+
+
+ /* popup box */
+
+
+.content{
+/* the box will stand still when scrolling */
+    position: fixed;
+/* align it to the center of the page */
+ 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+
+#click{
+    display:none;
+}
+
+/* instead of making button, I turn it into an icon */
+.fa-smile-o{
+    cursor: pointer;
+    position: absolute;
+    top: 7%;
+    right: 33%;
+    float:right;   
+
+/* I added animation to make it spin */
+
+    -webkit-animation: spin 3s linear infinite;
+    -moz-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+    color: var(--col-02);
+ }
+
+ @-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+ }
+ @-moz-keyframesspin spin{
+    100%{-webkit-transform: rotate(360deg);}
+ }
+@keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+ }
+
+ .fa-smile-o:hover{
+
+    color: #7d8597;
+ }
+
+
+/* The same goes with another button */
+
+ .fa-frown-o{
+    cursor: pointer;
+    position: absolute;
+    top: 7%;
+    left: 33%;
+    float:right;   
+    -webkit-animation: spin 3s linear infinite;
+    -moz-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+    color: var(--col-02);
+    background: none;
+    border: none;
+    transition: .5s ease-in;
+ }
+
+ .fa-frown-o:hover{
+    transform: scale(1.2);
+    }
+
+
+/* pop-up box */
+/* I used JS at first to make the box close when users click on close btn but it did not work so I was super panic at that moment */
+/* I am good at JS so it become risky whenever I create the new function, then I decide to use only CSS and it turned out quite well */
+
+
+
+.click-me:hover{
+    background: #7d8597;
+}
+    
+.content{
+    opacity: 0;
+    visibility: hidden;
+    width: 1000px;
+    height: 600px;
+    background: #ded9e2;
+    border-radius: 30px;
+    box-shadow: 0 10px 50px 10px rgba(0,0,.5,1);
+    border: 2px solid;
+    color:#191717;
+    }
+
+
+#click:checked ~ .content{
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+        
+        
+    
+    }
+
+.header{
+    height: 70px;
+    overflow: hidden;
+    
+    
+
+    }
+
+.header h2{
+    color:#000000;
+    text-align: center;
+    font-weight: normal;
+    padding-top: 30px;
+    font-family: "tittle";
+
+}
+
+.close{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    padding: 0px 10px;
+    color:rgb(0, 0, 0);
+    
+}
+
+.content p{
+    padding-top: 15px;
+    padding: 10px 30px;
+    font-size: 19px;
+    font-family: "tittle";
+    color:#191717;
+    }
+
+
+.line{
+    position: absolute;
+    bottom: 65px;
+    width: 100%;
+    height: 2px;
+    background: #959292;
+    
+}
+
+.close-btn{
+    position: absolute;
+    bottom: 12px;
+    right: 450px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    color: #000000;
+    padding: 8px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: "tittle";
+
+}
+
+.close-btn:hover{
+    background: #7d8597;
+    color: white;
+    transition: .5s;
+    }
+
+
+/* input box */
+/* This is the box that I let users write their own quotes. */
+
+.boxtype_text{
+    width: 100px;
+    height: 100px;
+    
+    
+}
+
+.inputBox {
+    position: relative;
+    
+    letter-spacing: -0.2px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    height: 120px;
+
+    
+
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+
+
+}
+
+.inputBox input{
+    
+    width: 100%;
+    padding: 20px;
+    border: 2px solid var(--col-02);
+    border-radius: 20px;
+    outline: none;
+    background: #d0b8ac;
+    color: #772f1a;
+    
+    font-size: 40px;
+    font-family: "inputbox";
+    font-weight: 100px;
+    font-weight: bolder;
+    font-stretch: 100%;
+    
+    
+    }
+
+
